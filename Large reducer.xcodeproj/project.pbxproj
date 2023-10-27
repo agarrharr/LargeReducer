@@ -11,6 +11,8 @@
 		992977F52AEC6C9A008E4524 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992977F42AEC6C9A008E4524 /* ContentView.swift */; };
 		992977F72AEC6C9C008E4524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 992977F62AEC6C9C008E4524 /* Assets.xcassets */; };
 		992977FA2AEC6C9C008E4524 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 992977F92AEC6C9C008E4524 /* Preview Assets.xcassets */; };
+		992978012AEC6CB1008E4524 /* LargeReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992978002AEC6CB1008E4524 /* LargeReducer.swift */; };
+		992978042AEC6CDD008E4524 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 992978032AEC6CDD008E4524 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		992977F42AEC6C9A008E4524 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		992977F62AEC6C9C008E4524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		992977F92AEC6C9C008E4524 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		992978002AEC6CB1008E4524 /* LargeReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				992978042AEC6CDD008E4524 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +59,7 @@
 				992977F42AEC6C9A008E4524 /* ContentView.swift */,
 				992977F62AEC6C9C008E4524 /* Assets.xcassets */,
 				992977F82AEC6C9C008E4524 /* Preview Content */,
+				992978002AEC6CB1008E4524 /* LargeReducer.swift */,
 			);
 			path = "Large reducer";
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = "Large reducer";
+			packageProductDependencies = (
+				992978032AEC6CDD008E4524 /* ComposableArchitecture */,
+			);
 			productName = "Large reducer";
 			productReference = 992977EF2AEC6C9A008E4524 /* Large reducer.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 992977E62AEC6C9A008E4524;
+			packageReferences = (
+				992978022AEC6CDD008E4524 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 992977F02AEC6C9A008E4524 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			files = (
 				992977F52AEC6C9A008E4524 /* ContentView.swift in Sources */,
 				992977F32AEC6C9A008E4524 /* Large_reducerApp.swift in Sources */,
+				992978012AEC6CB1008E4524 /* LargeReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		992978022AEC6CDD008E4524 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				branch = "case-key-paths";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		992978032AEC6CDD008E4524 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 992978022AEC6CDD008E4524 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 992977E72AEC6C9A008E4524 /* Project object */;
 }
